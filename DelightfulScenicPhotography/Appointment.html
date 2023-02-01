@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delightful Scenic Photography</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="FoundationalWebDesign.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<header>
+    <h1>Delightful Scenic Photography</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="FoundationalWebDesign.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+<main>
+
+
+    <article>
+        <h2>Book your Appointment </h2>
+        <form>
+           First Name:
+            <input type="text" name="Fname">
+        </form>
+        <form>
+            Last Name:
+            <input type="text" name="Lname">
+        </form>
+        <form>
+            Phone
+            Number:
+            <input type="text" name="Pnum">
+        </form>
+        <form>
+            Email:
+            <input type=text" name="mail">
+        </form>
+        <form>
+            Date:
+            <input type=text" name="date">
+        </form>
+        <form>
+            Time:
+            <input type=text" name="time">
+        </form>
+       <form>
+           Photoshoot
+           Details:
+        <textarea id="w3review" name="w3review" rows="4" cols="50">
+
+  </textarea>
+        <br><br>
+       </form>
+        <button type="button" onclick="loadDoc()">Submit</button>
+
+        <p id="demo"></p>
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange=function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true);
+                xhttp.send();
+            }
+        </script>
+
+
+
+
+    </article>
+
+
+    <aside>
+        <h2>Related</h2>
+
+        <ul>
+            <li><a href="Appointment.html.html">Want your Photo taken? Book your Appointment</a></li>
+
+
+        </ul>
+    </aside>
+</main>
+    </head>
+
+
+</body>
+</html>
